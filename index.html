@@ -5,13 +5,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <!-- daisy UI connection -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom styles-->
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .color-span {
+            color: #1DD100;
+        }
+    </style>
+
 
 </head>
 
-<body>
+<body class="mx-36">
+    <header class="my-14">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-raleway font-extrabold ">R-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-left font-medium font-raleway">Home</a></li>
+                        <li><a class="text-left font-medium font-raleway">About</a></li>
+                        <li><a class="text-left font-medium font-raleway">Destination</a></li>
+                        <li><a class="text-left font-medium font-raleway">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn font-raleway text-xl font-bold text-[#1DD100] bg-[#b1f1a8]">Bus<img
+                            src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- banner section -->
+        <section class="my-14">
+            <div class="hero min-h-screen max-w-full rounded-2xl"
+                style="max-height: auto; max-width: auto; background-image: url('images/banner.png');">
+
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-screen-md">
+                        <h1 class="mb-5 text-6xl font-extrabold max-w-3xl max-h-44 font-raleway">End-to-End Travel with
+                            <br><span class="color-span font-raleway">R Paribahan </span>
+                        </h1>
+                        <p class="mb-5 max-w-2xl max-h-16 font-raleway">Enjoy your rides with R Paribahan and have an
+                            amazing experience. We believe in comfort and budget. Please stay with us. Thank you.</p>
+                        <button class="btn font-bold text-xl text-black border-0 bg-[#1DD100] px-8 font-raleway">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- best offers section -->
+        <section class="text-center">
+            <h1 class=" font-raleway text-4xl font-bold mb-6">Best offers for you</h1>
+
+            <div class="flex gap-20 justify-center text-center">
+                <div>
+                    <div class="hero min-h-screen bg-no-repeat rounded-2xl"
+                        style=" min-height: auto; min-width: auto; background-image: url(images/Rectangle\ 8.png);">
+                        <div class="hero-content text-center text-neutral-content max-w-xl max-h-56">
+                            <div class="max-w-md text-center ">
+                                <div class="flex justify-center">
+                                    <p class="font-inter text-center"><span class="font-black text-4xl text-black">15%
+                                            OFF
+                                        </span><br>
+                                        <span class="text-xl font-semibold text-black">on your next purchase</span> <br>
+                                        <span class="font-medium text-[#03071266] text-lg">use by January 2024 </span>
+                                    </p>
+                                    <img src="images/cupon-devider.png" alt="">
+                                    <p class="font-raleway text-center"><span class="text-4xl font-bold text-black">
+                                            NEW15</span><br> <span class="font-medium text-[#03071266] text-xl">Coupon
+                                            Code</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="hero min-h-screen bg-no-repeat rounded-2xl"
+                        style=" min-height: auto; min-width: auto; background-image: url(images/Rectangle\ 8\ \(1\).png);">
+                        <div class="hero-content text-center text-neutral-content max-w-xl max-h-56">
+                            <div class="max-w-md ">
+                                <div class="flex ">
+                                    <p class="font-inter"><span class="font-black text-4xl text-black">20% OFF
+                                        </span><br>
+                                        <span class="text-xl font-semibold text-black">on your next purchase</span> <br>
+                                        <span class="font-medium text-[#03071266] text-lg">use by January 2024 </span>
+                                    </p>
+                                    <img src="images/cupon-devider.png" alt="">
+                                    <p class="font-raleway"><span class="text-4xl font-bold text-black">
+                                            Couple20</span><br> <span
+                                            class="font-medium text-[#03071266] text-xl">Coupon
+                                            Code</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+            <div class="text-center mt-8">
+                <button class="btn font-raleway text-xl font-bold text-[#1DD100] bg-white border-[#1DD100]">See all
+                    offers</button>
+            </div>
+
+
+
+
+
+            <!-- right side part of sale  -->
+
+            <div class="md:flex lg:col-span-1 mt-32">
+                <div>
+                    <div class="bg-white p-6 rounded-md">
+                        <h3 class="text-xl font-bold py-4">Have coupon?</h3>
+                        <div class="join">
+                            <input id="input-field" class="input input-bordered join-item w-40"
+                                placeholder="Discount" />
+                            <button id="apply-btn" class="btn join-item rounded-md bg-[#F11A7B] text-white font-bold">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                    <div class="my-8 p-4 bg-white rounded-md">
+                        <div id="title-container"></div>
+                        <hr class="my-4" />
+                        <p class="text-xl font-bold py-2">
+                            Total Price: $<span id="totalPrice"></span>
+                        </p>
+
+                        <p class="text-xl font-bold py-2">
+                            Discount: $<span id="discountPrice"></span>
+                        </p>
+                        <p class="text-xl font-bold pb-2">
+                            Total: $<span id="total"></span>
+                        </p>
+                        <hr class="my-4" />
+                        <button class="btn btn-wide bg-[#F11A7B] text-white">
+                            Make Purchase
+                        </button>
+                    </div>
+                </div>
+            </div>
+<!-- login form -->
+            <div>
+                <div class=" flex-col lg:flex-row-reverse">
+
+                    <div class="card shrink-0 w-fit max-w-sm ">
+                        <form class="card-body">
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-inter font-semibold text-base">Passenger Name*</span>
+                                </label>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered text-base font-normal" required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-inter font-semibold text-base">Phone Number*</span>
+                                </label>
+                                <input type="number" placeholder="Enter your phonenumber" class="input input-bordered text-base font-normal" required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-inter font-semibold text-base">Email ID</span>
+                                </label>
+                                <input type="email" placeholder="Enter your email id" class="input input-bordered text-base font-normal" required />
+                            </div>
+
+
+                            <div class="form-control mt-6">
+                                <button class="btn bg-[#1DD100] text-white font-inter text-xl font-extrabold">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+    </main>
 
     <script src="scripts/index.js"></script>
 </body>
